@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 60px;
+  padding: 0 20px;
+
+  background-color: #ff86e1;
+}
+
+.logoSmall {
+  display: none;
+}
+
+.dropDownMenu {
+  position: relative;
+  padding: 10px;
+  background-image: linear-gradient(to right, #ff66d9, #000000);
+  border-radius: 10px;
+  cursor: pointer;
+
+  color: rgb(255, 248, 248);
+}
+
+.dropDownMenu:hover .dropDownContent {
+  display: block;
+}
+
+.dropDownContent {
+  display: none;
+  position: absolute;
+  top: 39px;
+  left: 0px;
+  width: 100%;
+  padding-top:10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.dropDownContent ul {
+  list-style: none;
+  background-color: #000000;
+}
+
+.dropDownContent ul li:hover,
+.dropDownContent ul li:hover a{
+  background-color: #ff86e1;
+  color: white;
+}
+
+.dropDownContent ul li a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width:900px) {
+  .dropDownMenu {
+    font-size: 0.8rem;
+  }
+  .logo {
+    height: 18px;
+    width: 202px;
+  }
+}
